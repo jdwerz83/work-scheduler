@@ -1,7 +1,7 @@
 var timeEl = $("#currentDay");
 var currentTime;
 clockUpdater();
-loadData();
+loadField();
 
 var clock = setInterval(clockUpdater, 1000)
 
@@ -41,4 +41,8 @@ function saveClick(event){
         localStorage.setItem(time, text);
         alert("Task saved");
     }
+}
+
+function loadField(){
+    $('#9 .appointment').val(localStorage.getItem('9'));
 }
