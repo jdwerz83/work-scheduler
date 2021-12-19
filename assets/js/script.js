@@ -1,11 +1,11 @@
 var timeEl = $("#currentDay");
 var currentTime;
-clockUpdater();
+clockNow();
 loadField();
 
-var clock = setInterval(clockUpdater, 1000)
+var clock = setInterval(clockNow, 1000)
 
-function clockUpdater(){
+function clockNow(){
     currentTime = moment();
     timeEl.text(currentTime);
     checkTimeBlock();
