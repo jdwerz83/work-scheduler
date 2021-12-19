@@ -28,3 +28,5 @@ function checkTimeBlock(){
         }        
     }
 }
+
+$(".saveBtn").on("click", saveClick);
