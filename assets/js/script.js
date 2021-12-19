@@ -32,7 +32,7 @@ function checkTimeBlock(){
 $(".saveBtn").on("click", saveClick);
 
 function saveClick(event){
-    var text = $(event.target).siblings(".description").val();
+    var text = $(event.target).siblings(".appointment").val();
     var time = $(event.target).parent().attr("id");
 
     if(text === "")
