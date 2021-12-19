@@ -45,4 +45,12 @@ function saveClick(event){
 
 function loadField(){
     $('#9 .appointment').val(localStorage.getItem('9'));
+    $('#10 .appointment').val(localStorage.getItem('10'));
+    $('#11 .appointment').val(localStorage.getItem('11'));
+    $('#12 .appointment').val(localStorage.getItem('12'));
+    $('#13 .appointment').val(localStorage.getItem('13'));
+    $('#14 .appointment').val(localStorage.getItem('14'));
+    $('#15 .appointment').val(localStorage.getItem('15'));
+    $('#16 .appointment').val(localStorage.getItem('16'));
+    $('#17 .appointment').val(localStorage.getItem('17'));
 }
