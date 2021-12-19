@@ -30,3 +30,15 @@ function checkTimeBlock(){
 }
 
 $(".saveBtn").on("click", saveClick);
+
+function saveClick(event){
+    var text = $(event.target).siblings(".description").val();
+    var time = $(event.target).parent().attr("id");
+
+    if(text === "")
+        alert("Type appointments into the field to save")
+    else{
+        localStorage.setItem(time, text);
+        alert("Task saved");
+    }
+}
